@@ -25,7 +25,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -65,4 +64,59 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+/* Скидання відступів, полів і встановлення коробкової моделі */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Забезпечення однакового шрифту по всій сторінці */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Видалення стандартних стилів списків */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Видалення стандартного оформлення посилань */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Вирівнювання зображень */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Скидання стилів кнопок */
+button {
+  cursor: pointer;
+}
+
+/* Скидання стилів для input і textarea */
+input,
+textarea {
+  font: inherit;
+  outline: none;
+}
+
+/* Додавання кращого рендерингу шрифтів */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
