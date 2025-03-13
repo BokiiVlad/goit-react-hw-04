@@ -1,11 +1,12 @@
 import axios from "axios";
 
-export default async function queryServer(queryValue) {
+export default async function queryServer(queryValue, page) {
     const paramsValue = {
         params: {
             client_id: "j2m5CnZbXuFFpKZA6Aczf6nWhu_eX1W5fkXlkYx1S7A",
             query: queryValue,
-            per_page: 5,
+            page: page,
+            per_page: 1,
         }
     }
     const queryResult = await axios.get("https://api.unsplash.com/search/photos", paramsValue)

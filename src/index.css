@@ -1,4 +1,5 @@
 :root {
+  padding: 0;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -36,8 +37,6 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -48,11 +47,10 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+ul {
+  padding: 0;
+  list-style: none;
 }
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -64,59 +62,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-/* Скидання відступів, полів і встановлення коробкової моделі */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Забезпечення однакового шрифту по всій сторінці */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background-color: #fff;
-}
-
-/* Видалення стандартних стилів списків */
-ul,
-ol {
-  list-style: none;
-}
-
-/* Видалення стандартного оформлення посилань */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Вирівнювання зображень */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Скидання стилів кнопок */
-button {
-  cursor: pointer;
-}
-
-/* Скидання стилів для input і textarea */
-input,
-textarea {
-  font: inherit;
-  outline: none;
-}
-
-/* Додавання кращого рендерингу шрифтів */
-html {
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }

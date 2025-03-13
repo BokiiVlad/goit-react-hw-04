@@ -1,9 +1,9 @@
-// import css from "./ImageGallery.modal.css";
+import css from "./ImageGallery.module.css";
 import ImageCard from "../ImageCard/ImageCard";
 
 export default function ImageGallery({ value }) {
   return (
-    <ul>
+    <ul className={css.imageField}>
       {value.map((image) => {
         return (
           <li key={image.id}>
