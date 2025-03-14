@@ -50,7 +50,15 @@ function App() {
     <>
       <SearchBar onSubmit={handleFilter} />
       {images.length > 0 && <ImageGallery value={images} />}
-      {loader && <PacmanLoader />}
+      {loader && (
+        <PacmanLoader
+          cssOverride={{
+            display: "inline-block",
+            margin: "0 auto",
+            textAlign: "center",
+          }}
+        />
+      )}
       {error && <ErrorMessage />}
       {images.length > 0 && !loader && <LoadMoreBtn pageUp={pageUp} />}
     </>
