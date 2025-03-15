@@ -3,6 +3,7 @@ import axios from "axios";
 export default async function queryServer(queryValue, page) {
     const paramsValue = {
         params: {
+            orientation: "landscape",
             client_id: "j2m5CnZbXuFFpKZA6Aczf6nWhu_eX1W5fkXlkYx1S7A",
             query: queryValue,
             page: page,
